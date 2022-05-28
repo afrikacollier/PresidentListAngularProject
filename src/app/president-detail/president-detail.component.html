@@ -1,0 +1,18 @@
+<div *ngIf="president">
+    <h2>{{president.name | uppercase}}</h2>
+    <div>
+        <span>id: </span>{{president.id}}
+    </div>
+    <div>
+        <span>president number: </span>{{president.number}}
+    </div>
+    <div>
+        <span>years served: </span>{{president.year}}
+    </div>
+    <div>
+        <label>
+            impact:
+            <input [(ngModel)]="president.impact" placeholder="impact"/>
+        </label>
+    </div>
+</div>

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:not(i, b, input) {
+    background-color: #6077c0;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 10em;
+    overflow: hidden;
+}
+
+
+/*i, b {
+    background: #EEE;
+}
+
+li i:hover, li b:hover {
+        color: #607D8B;
+        background-color: #CFD8DC;
+}*/

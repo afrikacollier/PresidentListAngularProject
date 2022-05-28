@@ -1,0 +1,13 @@
+<h2>Presidents</h2>
+<ul class="presidents">
+    <li *ngFor="let president of presidents" 
+    [class.selected]="president === selectedPresident" 
+    (click)="onSelect(president)">
+        <span class="badge">{{president.id}}</span>
+        <b>{{president.number}}</b> |
+        {{president.name}} |
+        <i>{{president.year}}</i> 
+    </li> 
+</ul>
+
+<app-president-detail [president]="selectedPresident"></app-president-detail>
