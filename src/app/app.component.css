@@ -1,0 +1,11 @@
+button {
+    margin: 2px;
+    background-color: white;
+    padding: 5px 5px 5px;
+    border-radius: 0.3em;
+    border-color: #606060;
+}
+
+nav {
+    text-align: center;
+}

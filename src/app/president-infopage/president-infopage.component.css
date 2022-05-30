@@ -1,0 +1,8 @@
+li:active {
+    background-color: #CFD8DC;
+    color: white;
+}
+li.active:hover{
+    background-color: #BBD8DC;
+    color: white;
+}

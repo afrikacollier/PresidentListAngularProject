@@ -1,4 +1,5 @@
 <h2>Presidents</h2>
+<app-president-detail [president]="selectedPresident"></app-president-detail>
 <ul class="presidents">
     <li *ngFor="let president of presidents" 
     [class.selected]="president === selectedPresident" 
@@ -9,5 +10,3 @@
         <i>{{president.year}}</i> 
     </li> 
 </ul>
-
-<app-president-detail [president]="selectedPresident"></app-president-detail>
