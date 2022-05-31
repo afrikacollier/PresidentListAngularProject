@@ -1,5 +1,2 @@
-<h2>Presidents</h2>
-<p>Turning in what I have couldn't get the details of the selected President from 
-    one Page to display on another Page when the buttons president was clicked
-</p>
-<app-president-detail [president]="selectedPresident"></app-president-detail>
+<h2>President's Information</h2>
+<app-president-detail [president]="presidentService.getCurrentPresident()"></app-president-detail>

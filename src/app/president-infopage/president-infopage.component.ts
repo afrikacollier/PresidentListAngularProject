@@ -3,25 +3,20 @@ import { President } from '../president';
 import { PRESIDENTS } from '../mock-presidents';
 import { PresidentDetailComponent } from '../president-detail/president-detail.component';
 import { PresidentsComponent } from '../presidents/presidents.component';
+import { PresidentService } from '../president.service';
 
 @Component({
   selector: 'app-president-infopage',
   templateUrl: './president-infopage.component.html',
   styleUrls: ['./president-infopage.component.css']
 })
-export class PresidentInfopageComponent extends PresidentsComponent implements OnInit {
+export class PresidentInfopageComponent implements OnInit {
 
-  constructor() {
-    super();
-    super.onSelect = this.onSelect;
+  constructor(public presidentService: PresidentService) {
    }
 
-  override ngOnInit(): void {
+  ngOnInit(): void {
   }
 
-
-  override onSelect(president: President): void {
-    super.selectedPresident = president;
-  }
 
 }

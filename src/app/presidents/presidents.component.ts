@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { President } from '../president';
 import { PRESIDENTS } from '../mock-presidents';
+import { PresidentService } from '../president.service';
+
 @Component({
   selector: 'app-presidents',
   templateUrl: './presidents.component.html',
@@ -10,12 +12,13 @@ import { PRESIDENTS } from '../mock-presidents';
 export class PresidentsComponent implements OnInit {
   presidents: President[] = PRESIDENTS;
   selectedPresident?: President;
-  constructor() { }
+  constructor(private presidentService: PresidentService) { }
 
   ngOnInit(): void {
   }
 
   onSelect(president: President): void {
+    this.presidentService.setCurrentPresident(president); 
     this.selectedPresident = president;
   }
 
